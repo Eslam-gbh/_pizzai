@@ -58,7 +58,7 @@ class TestOrderListTestCase(APITestCase):
             self.url,
             content_type='application/json',
             data=json.dumps(self.order_post_data),
-            headers={'HTTP_X_IDEMPOTENCY_KEY': '123'}
+            HTTP_X_IDEMPOTENCY_KEY='123'
         )
         eq_(response.status_code, status.HTTP_201_CREATED)
 

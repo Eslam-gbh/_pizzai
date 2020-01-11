@@ -1,3 +1,4 @@
+import json
 from django.urls import reverse
 from django.forms.models import model_to_dict
 from django.contrib.auth.hashers import check_password
@@ -19,13 +20,18 @@ class TestUserListTestCase(APITestCase):
     def setUp(self):
         self.url = reverse('user-list')
         self.user_data = model_to_dict(UserFactory.build())
+        self.user_data.pop('date_joined')
 
     def test_post_request_with_no_data_fails(self):
         response = self.client.post(self.url, {})
         eq_(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_post_request_with_valid_data_succeeds(self):
-        response = self.client.post(self.url, self.user_data)
+        response = self.client.post(
+            self.url,
+            content_type='application/json',
+            data=json.dumps(self.user_data)
+        )
         eq_(response.status_code, status.HTTP_201_CREATED)
 
         user = User.objects.get(pk=response.data.get('id'))
