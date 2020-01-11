@@ -1,0 +1,13 @@
+site_name: pizzai
+site_description: Its all about a Weissman score > 5.0
+repo_url: https://github.com/Eslam.gbh/pizzai
+site_dir: site
+copyright: Copyright &copy; 2019, <a href="https://github.com/Eslam.gbh">Eslam.gbh</a>.
+dev_addr: 0.0.0.0:8001
+
+nav:
+  - Home: 'index.md'
+  - API:
+    - Authentication: 'api/authentication.md'
+    - Users: 'api/users.md'
+    - Schema: 'api/schema.md'
