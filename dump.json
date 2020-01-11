@@ -1,0 +1,778 @@
+[{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "users",
+        "model": "user"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "users",
+        "model": "city"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "orders",
+        "model": "category"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "orders",
+        "model": "order"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "orders",
+        "model": "ordereditem"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "orders",
+        "model": "product"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "orders",
+        "model": "productvariant"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "orders",
+        "model": "size"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "kfryj7hf5zi5eu0jauwgxrqjn5s8ixbz",
+    "fields": {
+        "session_data":
+        "NzMzMzY2YzZjZGY3NmY1YjI2MjlmMTNhYzhiZjgxMzk2MDIwZDJjNTp7Il9hdXRoX3VzZXJfaWQiOiIyODc0ODU3ZS00NDA3LTQ5M2MtYmMxZS00ODY3ODU5MTllYWQiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImY1MmM2YTVkMWE5NzY5NmQ3YWQyMTcyMWZjOGZlMDQ1ZmEyZWQ2YmMifQ==",
+        "expire_date":
+        "2019-12-15T22:54:02.701Z"
+    }
+}, {
+    "model": "orders.ordereditem",
+    "pk": 1,
+    "fields": {
+        "item_number": 1,
+        "order": 1,
+        "product_variant": 1,
+        "amount": 3,
+        "created_at": "2019-12-01T22:59:58.061Z",
+        "updated_at": "2019-12-01T22:59:58.061Z"
+    }
+}, {
+    "model": "orders.size",
+    "pk": "LARGE",
+    "fields": {
+        "serial": "003",
+        "created_at": "2019-12-01T22:59:58.061Z",
+        "updated_at": "2019-12-01T22:59:58.061Z"
+    }
+}, {
+    "model": "orders.size",
+    "pk": "MEDIUM",
+    "fields": {
+        "serial": "002",
+        "created_at": "2019-12-01T22:59:47.124Z",
+        "updated_at": "2019-12-01T22:59:47.124Z"
+    }
+}, {
+    "model": "orders.size",
+    "pk": "SMALL",
+    "fields": {
+        "serial": "001",
+        "created_at": "2019-12-01T22:59:37.658Z",
+        "updated_at": "2019-12-01T22:59:37.658Z"
+    }
+}, {
+    "model": "orders.category",
+    "pk": "P00",
+    "fields": {
+        "sequence_num": 1,
+        "name": "Pizza",
+        "created_at": "2019-12-01T22:54:42.893Z",
+        "updated_at": "2019-12-01T22:54:42.893Z"
+    }
+}, {
+    "model": "orders.product",
+    "pk": "P01",
+    "fields": {
+        "name": "Pizza Margarita",
+        "description": "Pizza with mozzarella only",
+        "category": "P00",
+        "created_at": "2019-12-01T22:56:31.412Z",
+        "updated_at": "2019-12-01T22:56:31.412Z"
+    }
+}, {
+    "model": "orders.product",
+    "pk": "P02",
+    "fields": {
+        "name":
+        "Pizza Marinara",
+        "description":
+        "Neapolitan pizza in Italian cuisine prepared with plain marinara sauce",
+        "category":
+        "P00",
+        "created_at":
+        "2019-12-01T22:57:51.804Z",
+        "updated_at":
+        "2019-12-01T22:57:51.804Z"
+    }
+}, {
+    "model": "orders.product",
+    "pk": "P03",
+    "fields": {
+        "name":
+        "Pizza Salami",
+        "description":
+        "Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base of leavened",
+        "category":
+        "P00",
+        "created_at":
+        "2019-12-01T22:58:49.673Z",
+        "updated_at":
+        "2019-12-01T22:58:49.673Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 1,
+    "fields": {
+        "product": "P01",
+        "size": "LARGE",
+        "price": "50.00",
+        "created_at": "2019-12-01T23:03:02.584Z",
+        "updated_at": "2019-12-01T23:03:02.584Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 2,
+    "fields": {
+        "product": "P01",
+        "size": "MEDIUM",
+        "price": "40.00",
+        "created_at": "2019-12-01T23:03:22.828Z",
+        "updated_at": "2019-12-01T23:03:22.828Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 3,
+    "fields": {
+        "product": "P01",
+        "size": "SMALL",
+        "price": "30.00",
+        "created_at": "2019-12-01T23:03:30.683Z",
+        "updated_at": "2019-12-01T23:03:30.683Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 4,
+    "fields": {
+        "product": "P02",
+        "size": "LARGE",
+        "price": "40.00",
+        "created_at": "2019-12-01T23:03:40.012Z",
+        "updated_at": "2019-12-01T23:03:40.012Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 5,
+    "fields": {
+        "product": "P02",
+        "size": "MEDIUM",
+        "price": "30.00",
+        "created_at": "2019-12-01T23:03:48.957Z",
+        "updated_at": "2019-12-01T23:03:48.957Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 6,
+    "fields": {
+        "product": "P02",
+        "size": "SMALL",
+        "price": "20.00",
+        "created_at": "2019-12-01T23:03:55.001Z",
+        "updated_at": "2019-12-01T23:03:55.001Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 7,
+    "fields": {
+        "product": "P03",
+        "size": "LARGE",
+        "price": "30.00",
+        "created_at": "2019-12-01T23:04:01.777Z",
+        "updated_at": "2019-12-01T23:04:01.777Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 8,
+    "fields": {
+        "product": "P03",
+        "size": "MEDIUM",
+        "price": "20.00",
+        "created_at": "2019-12-01T23:04:09.651Z",
+        "updated_at": "2019-12-01T23:04:09.651Z"
+    }
+}, {
+    "model": "orders.productvariant",
+    "pk": 9,
+    "fields": {
+        "product": "P03",
+        "size": "SMALL",
+        "price": "10.00",
+        "created_at": "2019-12-01T23:04:17.400Z",
+        "updated_at": "2019-12-01T23:04:17.400Z"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 6,
+        "codename": "add_token"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 6,
+        "codename": "change_token"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 6,
+        "codename": "delete_token"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": 6,
+        "codename": "view_token"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 7,
+        "codename": "add_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 7,
+        "codename": "change_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 7,
+        "codename": "delete_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 7,
+        "codename": "view_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add City",
+        "content_type": 8,
+        "codename": "add_city"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change City",
+        "content_type": 8,
+        "codename": "change_city"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete City",
+        "content_type": 8,
+        "codename": "delete_city"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view City",
+        "content_type": 8,
+        "codename": "view_city"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add Category",
+        "content_type": 9,
+        "codename": "add_category"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change Category",
+        "content_type": 9,
+        "codename": "change_category"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete Category",
+        "content_type": 9,
+        "codename": "delete_category"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view Category",
+        "content_type": 9,
+        "codename": "view_category"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add Order",
+        "content_type": 10,
+        "codename": "add_order"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change Order",
+        "content_type": 10,
+        "codename": "change_order"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete Order",
+        "content_type": 10,
+        "codename": "delete_order"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view Order",
+        "content_type": 10,
+        "codename": "view_order"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add Ordered Item",
+        "content_type": 11,
+        "codename": "add_ordereditem"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change Ordered Item",
+        "content_type": 11,
+        "codename": "change_ordereditem"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete Ordered Item",
+        "content_type": 11,
+        "codename": "delete_ordereditem"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view Ordered Item",
+        "content_type": 11,
+        "codename": "view_ordereditem"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add Product",
+        "content_type": 12,
+        "codename": "add_product"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change Product",
+        "content_type": 12,
+        "codename": "change_product"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete Product",
+        "content_type": 12,
+        "codename": "delete_product"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view Product",
+        "content_type": 12,
+        "codename": "view_product"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add ProductVariant",
+        "content_type": 13,
+        "codename": "add_productvariant"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change ProductVariant",
+        "content_type": 13,
+        "codename": "change_productvariant"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete ProductVariant",
+        "content_type": 13,
+        "codename": "delete_productvariant"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view ProductVariant",
+        "content_type": 13,
+        "codename": "view_productvariant"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add Size",
+        "content_type": 14,
+        "codename": "add_size"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change Size",
+        "content_type": 14,
+        "codename": "change_size"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete Size",
+        "content_type": 14,
+        "codename": "delete_size"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view Size",
+        "content_type": 14,
+        "codename": "view_size"
+    }
+}, {
+    "model": "users.user",
+    "pk": "2874857e-4407-493c-bc1e-486785919ead",
+    "fields": {
+        "password":
+        "pbkdf2_sha256$120000$uemcOHleKRZa$Va9tk4V4XQGcD9WO27/OfcaPQYJmw1+tT39WTOgHuGo=",
+        "last_login":
+        "2019-12-01T22:54:02.684Z",
+        "is_superuser":
+        true,
+        "username":
+        "eslam",
+        "first_name":
+        "",
+        "last_name":
+        "",
+        "is_staff":
+        true,
+        "is_active":
+        true,
+        "date_joined":
+        "2019-12-01T22:50:11.157Z",
+        "city_id":
+        null,
+        "address":
+        null,
+        "contact_phone":
+        null,
+        "email":
+        "eslam.gbh@gmail.com",
+        "confirmation_code":
+        null,
+        "time_joined":
+        "2019-12-01T22:50:11.263Z",
+        "updated_at":
+        "2019-12-01T22:50:11.263Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "orders.order",
+    "pk": 1,
+    "fields": {
+        "customer": "2874857e-4407-493c-bc1e-486785919ead",
+        "status": "placed",
+        "created_at": "2019-12-01T23:06:12.938Z",
+        "updated_at": "2019-12-01T23:06:12.938Z"
+    }
+}]
