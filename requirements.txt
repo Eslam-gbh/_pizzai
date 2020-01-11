@@ -4,6 +4,7 @@ Django==2.1.11
 django-configurations==2.1
 gunicorn==19.9.0
 newrelic==4.12.0.113
+django-optimistic-lock==1.0.0
 
 # For the persistence stores
 psycopg2-binary==2.7.7
@@ -21,8 +22,11 @@ django-filter==2.1.0
 # Developer Tools
 ipdb==0.11
 ipython==7.2.0
-mkdocs==1.0.4
 flake8==3.7.5
+
+# Automated Docs
+django-rest-swagger==2.2.0
+mkdocs==1.0.4
 
 # Testing
 mock==2.0.0
