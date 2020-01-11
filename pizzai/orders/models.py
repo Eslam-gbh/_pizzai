@@ -32,11 +32,6 @@ class Order(BaseModel):
         choices=STATUS_CHOICES,
         default=PLACED,
     )
-    product_variants = models.ManyToManyField(
-        'ProductVariant',
-        through='OrderedItem',
-        related_name='orders',
-    )
 
     @property
     def total_price(self):

@@ -1,6 +1,5 @@
 import factory
 from pizzai.users.test.factories import UserFactory
-from pizzai.orders.models import OrderedItem
 
 
 class SizeFactory(factory.django.DjangoModelFactory):
@@ -55,18 +54,12 @@ class OrderFactory(factory.django.DjangoModelFactory):
     customer = factory.SubFactory(UserFactory)
     status = 'placed'
 
-    @factory.post_generation
-    def product_variants(self, create, extracted, **kwargs):
-        if not create:
-            # Simple build, do nothing.
-            return
 
-        if extracted:
-            # A list of groups were passed in, use them
-            for index, (ordered_item, amount) in enumerate(extracted):
-                OrderedItem.objects.create(
-                    item_number=index,
-                    order=self,
-                    product_variant=ordered_item,
-                    amount=amount,
-                )
+class OrderedItemFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'orders.OrderedItem'
+
+    item_number = factory.Faker('pyint')
+    order = factory.SubFactory(OrderFactory)
+    product_variant = factory.SubFactory(ProductVariantFactory)
+    amount = 1
